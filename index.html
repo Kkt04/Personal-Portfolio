@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalash Kumari Thakur — AI Engineer & Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-text">KKT</span>
+      <span class="logo-dot">.</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#experience" class="mob-link">Experience</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        HPAIR 2025 &amp; 2026 Delegate
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line" data-delay="0">Kalash</span>
+        <span class="title-line italic" data-delay="100">Kumari</span>
+        <span class="title-line" data-delay="200">Thakur</span>
+      </h1>
+      <div class="hero-roles">
+        <span class="role-tag">AI Engineer</span>
+        <span class="role-divider">/</span>
+        <span class="role-tag">Full-Stack Dev</span>
+        <span class="role-divider">/</span>
+        <span class="role-tag">ML Researcher</span>
+      </div>
+      <p class="hero-desc">
+        B.Tech AI student building production-grade machine learning solutions and full-stack applications. Turning data into decisions.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">20+</span>
+          <span class="stat-label">PRs Merged</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">2.2M+</span>
+          <span class="stat-label">Records Processed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">98.9%</span>
+          <span class="stat-label">Best R² Score</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 — About</span>
+        <h2 class="section-title">Crafting Intelligence,<br /><em>One Model at a Time</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">I'm a B.Tech Artificial Intelligence student at Newton School of Technology, Rishihood University — passionate about applying cutting-edge ML techniques to real-world problems.</p>
+          <p class="about-body">With hands-on experience as a Full-Stack intern at Futwork, I've shipped production code using React, Node.js, and MongoDB. My projects span time-series forecasting, large-scale data mining, and predictive financial modeling.</p>
+          <p class="about-body">Beyond code, I'm an HPAIR 2025 &amp; 2026 Delegate, a former Fine Arts Club coordinator, and someone who completed a 100 km Walkathon — because endurance matters in both running and engineering.</p>
+          <div class="about-links">
+            <a href="mailto:kalashkumarithakur@gmail.com" class="about-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </a>
+            <a href="https://www.linkedin.com/in/kalash-kumari-thakur-918796291/" target="_blank" class="about-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/Kkt04" target="_blank" class="about-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="about-card-col">
+          <div class="edu-card">
+            <div class="edu-label">Currently Studying</div>
+            <div class="edu-degree">B.Tech — Artificial Intelligence</div>
+            <div class="edu-school">Newton School of Technology<br />Rishihood University</div>
+            <div class="edu-meta">
+              <span>2023 – 2027</span>
+              <span class="edu-grade">7.818 / 10.0</span>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </div>
+            <div>
+              <div class="cert-title">Robotics Workshop</div>
+              <div class="cert-sub">Newton School of Technology · Jan 2024<br />Arduino Programming</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Skills</span>
+        <h2 class="section-title">My Technical<br /><em>Toolkit</em></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category" data-index="0">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">⟨/⟩</div>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-index="1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">⬡</div>
+            <h3>Frameworks</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Gunicorn</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-index="2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">∑</div>
+            <h3>ML / Data</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">scikit-learn</span>
+            <span class="skill-tag">XGBoost</span>
+            <span class="skill-tag">Prophet</span>
+            <span class="skill-tag">ARIMA</span>
+            <span class="skill-tag">pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">statsmodels</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-index="3">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">⬢</div>
+            <h3>Databases &amp; Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Generative AI</span>
+          </div>
+        </div>
+
+        <div class="skill-category skill-category--wide" data-index="4">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">◈</div>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Public Speaking</span>
+            <span class="skill-tag">Leadership</span>
+            <span class="skill-tag">Team Management</span>
+            <span class="skill-tag">Written Communication</span>
+            <span class="skill-tag">Time Management</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Projects</span>
+        <h2 class="section-title">Selected<br /><em>Works</em></h2>
+      </div>
+      <div class="projects-list">
+
+        <!-- Project 1 -->
+        <article class="project-card" data-index="0">
+          <div class="project-meta-row">
+            <span class="project-number">01</span>
+            <span class="project-date">November 2025</span>
+          </div>
+          <div class="project-body">
+            <div class="project-info">
+              <h3 class="project-title">Supermart Grocery<br />Sales Forecasting</h3>
+              <p class="project-desc">Time series project predicting monthly grocery sales using ARIMA, Prophet, and XGBoost on 9,800+ transactions (2015-2018). Achieved 86% prediction accuracy with K-Fold cross-validation.</p>
+              <div class="project-metrics">
+                <div class="metric">
+                  <span class="metric-val">R² = 0.86</span>
+                  <span class="metric-label">Prophet Score</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-val">+25%</span>
+                  <span class="metric-label">Stock Optimization</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-val">100%</span>
+                  <span class="metric-label">Classification Acc.</span>
+                </div>
+              </div>
+              <div class="project-tags">
+                <span>Python</span><span>XGBoost</span><span>Prophet</span><span>ARIMA</span><span>pandas</span>
+              </div>
+              <a href="https://github.com/Kkt04/Supermart-Grocery-Sales-Forecasting-Analytics" class="project-link" target="_blank">
+                View on GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+            <div class="project-visual">
+              <div class="project-chart-visual chart-1">
+                <div class="chart-bars">
+                  <div class="bar" style="--h:60%"></div>
+                  <div class="bar" style="--h:80%"></div>
+                  <div class="bar" style="--h:55%"></div>
+                  <div class="bar" style="--h:90%"></div>
+                  <div class="bar active" style="--h:86%"></div>
+                  <div class="bar" style="--h:70%"></div>
+                  <div class="bar" style="--h:95%"></div>
+                  <div class="bar" style="--h:75%"></div>
+                </div>
+                <div class="chart-label">Forecast Accuracy</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-index="1">
+          <div class="project-meta-row">
+            <span class="project-number">02</span>
+            <span class="project-date">November 2025</span>
+          </div>
+          <div class="project-body">
+            <div class="project-info">
+              <h3 class="project-title">Scientific Research<br />Trends Analysis</h3>
+              <p class="project-desc">Large-scale data mining of 2.2M+ arXiv research papers to identify scientific growth patterns, collaboration networks, and citation behaviors. Delivered via an interactive Flask dashboard with a word-cloud generator.</p>
+              <div class="project-metrics">
+                <div class="metric">
+                  <span class="metric-val">2.2M+</span>
+                  <span class="metric-label">Papers Analyzed</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-val">R² = 0.83</span>
+                  <span class="metric-label">Prediction Score</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-val">1986–2025</span>
+                  <span class="metric-label">Data Range</span>
+                </div>
+              </div>
+              <div class="project-tags">
+                <span>Python</span><span>Flask</span><span>Random Forest</span><span>Semantic Scholar API</span><span>NumPy</span>
+              </div>
+              <a href="https://github.com/Kkt04/DM_Project" class="project-link" target="_blank">
+                View on GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+            <div class="project-visual">
+              <div class="project-chart-visual chart-2">
+                <div class="bubble-chart">
+                  <div class="bubble b1">ML</div>
+                  <div class="bubble b2">NLP</div>
+                  <div class="bubble b3">CV</div>
+                  <div class="bubble b4">Data</div>
+                  <div class="bubble b5">AI</div>
+                </div>
+                <div class="chart-label">Keyword Clusters</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-index="2">
+          <div class="project-meta-row">
+            <span class="project-number">03</span>
+            <span class="project-date">October 2025</span>
+          </div>
+          <div class="project-body">
+            <div class="project-info">
+              <h3 class="project-title">Gold Price Prediction<br />using ML</h3>
+              <p class="project-desc">Predicts historical gold prices (GLD) using Random Forest Regression with features: S&P 500, crude oil, silver price, and EUR/USD exchange rates. Achieved an R² score of 0.9895.</p>
+              <div class="project-metrics">
+                <div class="metric">
+                  <span class="metric-val">R² = 0.9895</span>
+                  <span class="metric-label">Model Accuracy</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-val">5</span>
+                  <span class="metric-label">Financial Features</span>
+                </div>
+              </div>
+              <div class="project-tags">
+                <span>Python</span><span>Random Forest</span><span>scikit-learn</span><span>Financial Data</span>
+              </div>
+              <a href="https://github.com/Kkt04/Gold-Price-Prediction-ML" class="project-link" target="_blank">
+                View on GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+            <div class="project-visual">
+              <div class="project-chart-visual chart-3">
+                <svg class="line-chart-svg" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                  <polyline class="line-actual" fill="none" stroke-width="2" points="0,80 30,60 60,70 90,40 120,50 150,25 180,30 200,15"/>
+                  <polyline class="line-pred" fill="none" stroke-width="2" stroke-dasharray="4,2" points="0,78 30,62 60,68 90,42 120,48 150,27 180,28 200,17"/>
+                </svg>
+                <div class="chart-label">Actual vs Predicted</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card" data-index="3">
+          <div class="project-meta-row">
+            <span class="project-number">04</span>
+            <span class="project-date">September 2024</span>
+          </div>
+          <div class="project-body">
+            <div class="project-info">
+              <h3 class="project-title">CourseBazar<br />Learning Platform</h3>
+              <p class="project-desc">A platform offering free educational courses with personalised recommendations, removing financial barriers and promoting accessible learning with an intuitive, user-centric interface.</p>
+              <div class="project-metrics">
+                <div class="metric">
+                  <span class="metric-val">Free</span>
+                  <span class="metric-label">Access Model</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-val">AI</span>
+                  <span class="metric-label">Recommendations</span>
+                </div>
+              </div>
+              <div class="project-tags">
+                <span>React.js</span><span>CSS</span><span>Frontend</span>
+              </div>
+              <div class="project-cta-row">
+                <a href="https://github.com/Kkt04/EduApp" class="project-link" target="_blank">
+                  GitHub
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                </a>
+                <!-- <a href="#" class="project-link" target="_blank">
+                  Live Demo
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                </a> -->
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="project-chart-visual chart-4">
+                <div class="course-cards-visual">
+                  <div class="vc1">ML Basics</div>
+                  <div class="vc2">Web Dev</div>
+                  <div class="vc3">Python</div>
+                </div>
+                <div class="chart-label">Course Platform UI</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Experience</span>
+        <h2 class="section-title">Where I've<br /><em>Worked</em></h2>
+      </div>
+      <div class="exp-layout">
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">Full-Stack Intern</h3>
+              <div class="exp-company">Futwork</div>
+            </div>
+            <div class="exp-period">
+              <span class="exp-date">Jan 2025 – Jul 2025</span>
+              <span class="exp-mode">Remote</span>
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>
+              <span class="bullet-dot"></span>
+              Engineered key components of the company dashboard using <strong>React, Node.js, and MongoDB</strong>, enhancing user interface functionality and data visualization.
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              Developed and integrated <strong>RESTful APIs</strong> on the backend to support frontend features, ensuring seamless data flow and application performance.
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              Contributed to the main codebase by submitting <strong>20+ pull requests</strong> successfully reviewed, merged, and deployed to production.
+            </li>
+          </ul>
+          <div class="exp-tech">
+            <span>React</span><span>Node.js</span><span>MongoDB</span><span>REST APIs</span><span>Git</span>
+          </div>
+        </div>
+
+        <div class="extras-col">
+          <div class="extra-card">
+            <div class="extra-icon">🎨</div>
+            <div>
+              <div class="extra-title">Fine Arts Club Coordinator</div>
+              <div class="extra-sub">Event management, orientations &amp; inventory at NST</div>
+            </div>
+          </div>
+          <div class="extra-card">
+            <div class="extra-icon">🏅</div>
+            <div>
+              <div class="extra-title">HPAIR 2025 &amp; 2026 Delegate</div>
+              <div class="extra-sub">Harvard Project for Asian and International Relations</div>
+            </div>
+          </div>
+          <div class="extra-card">
+            <div class="extra-icon">🏃</div>
+            <div>
+              <div class="extra-title">100 km Walkathon</div>
+              <div class="extra-sub">Completed endurance challenge demonstrating commitment</div>
+            </div>
+          </div>
+          <div class="extra-card">
+            <div class="extra-icon">🤖</div>
+            <div>
+              <div class="extra-title">Robotics Workshop</div>
+              <div class="extra-sub">Arduino programming · Newton School of Technology, Jan 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 — Contact</span>
+        <h2 class="section-title">Let's Build<br /><em>Something Together</em></h2>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-left">
+          <p class="contact-desc">Whether you have a project, an idea, or just want to say hello — my inbox is always open. Let's make something great.</p>
+          <div class="contact-details">
+            <a href="mailto:kalashkumarithakur@gmail.com" class="contact-item">
+              <div class="contact-item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <span>kalashkumarithakur@gmail.com</span>
+            </a>
+            <a href="tel:+917480001229" class="contact-item">
+              <div class="contact-item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <span>+91 74800 01229</span>
+            </a>
+          </div>
+          <div class="social-row">
+            <a href="https://www.linkedin.com/in/kalash-kumari-thakur-918796291/" target="_blank" class="social-btn">LinkedIn</a>
+            <a href="https://github.com/Kkt04" target="_blank" class="social-btn">GitHub</a>
+            <a href="https://www.hackerrank.com/onboarding?redirect=%2Fprofile%2Fkalash_k23csai" target="_blank" class="social-btn">HackerRank</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">
+            Send Message
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">KKT<span>.</span></div>
+        <p class="footer-copy">© 2025 Kalash Kumari Thakur. Crafted with care.</p>
+        <div class="footer-links">
+          <a href="#home">Top</a>
+          <a href="mailto:kalashkumarithakur@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
