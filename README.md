@@ -59,18 +59,13 @@ OpenAI API, LLM integration, Prompt Engineering
 
 ---
 
-## 📊 GitHub Stats
-
-![Kalash's GitHub stats](https://github-readme-stats.vercel.app/api?username=yourusername\&show_icons=true\&theme=default)
-
----
 
 ## 🌐 Connect With Me
 
-* GitHub: https://github.com/yourusername
-* LinkedIn: https://linkedin.com/in/yourprofile
-* Email: [your.email@example.com](mailto:your.email@example.com)
-* Portfolio: https://yourportfolio.com
+* GitHub: https://github.com/Kkt04
+* LinkedIn: https://www.linkedin.com/in/kalash-kumari-thakur-918796291/
+* Email: kalashkumarithakur@gmail.com
+* Portfolio: https://personal-portfolio-c7xp.vercel.app/
 
 ---
 
