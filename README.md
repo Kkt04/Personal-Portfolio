@@ -1,4 +1,4 @@
-# Hi, I'm Kalash Kumar 👋
+# Hi, I'm Kalash Kumari Thakur 👋
 
 🎓 Student | 💻 Full-Stack Developer | 🤖 AI Enthusiast
 
