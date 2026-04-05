@@ -1,5 +1,3 @@
-
-
 # Hi, I'm Kalash Kumari Thakur 👋
 
 🎓 Student | 💻 Full-Stack Developer | 🤖 AI Enthusiast
